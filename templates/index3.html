@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object Detection with YOLOv5</title>
+  </head>
+  <body>
+    <h1>Object Detection with YOLOv5</h1>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <button type="submit" name="detect">Detect</button>
+    </form>
+    <br>
+    {% if image %}
+      <h2>Original Image</h2>
+      <img src="{{ image }}" style="max-width: 500px;">
+      <br>
+      {% if detection %}
+        <h2>Detection Result</h2>
+        <!-- <img src="{{ detection }}" style="max-width: 500px;"> -->
+        
+      {% endif %}
+    {% endif %}
+  </body>
+</html>

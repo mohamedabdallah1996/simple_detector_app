@@ -1,0 +1,10 @@
+
+*.pt
+*.pth 
+
+*.png
+*.jpg
+*.jpeg
+
+venv/*
+
